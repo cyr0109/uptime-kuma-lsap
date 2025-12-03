@@ -808,6 +808,14 @@
                                 </div>
                             </div>
 
+                            <div class="my-3">
+                                <label for="reboot-script" class="form-label">{{ $t("Reboot Script") }}</label>
+                                <textarea id="reboot-script" v-model="monitor.rebootScript" class="form-control" rows="3"></textarea>
+                                <div class="form-text">
+                                    {{ $t("set reboot script to automatically reboot server when it's down") }}
+                                </div>
+                            </div>
+
                             <div v-if="monitor.type === 'gamedig'" class="my-3 form-check">
                                 <input id="gamedig-guess-port" v-model="monitor.gamedigGivenPortOnly" :true-value="false" :false-value="true" class="form-check-input" type="checkbox">
                                 <label class="form-check-label" for="gamedig-guess-port">
@@ -1326,7 +1334,8 @@ const monitorDefaults = {
     rabbitmqNodes: [],
     rabbitmqUsername: "",
     rabbitmqPassword: "",
-    conditions: []
+    conditions: [],
+    rebootScript: "",
 };
 
 export default {

@@ -32,6 +32,7 @@ const Security = () => import("./components/settings/Security.vue");
 import Proxies from "./components/settings/Proxies.vue";
 import About from "./components/settings/About.vue";
 import RemoteBrowsers from "./components/settings/RemoteBrowsers.vue";
+import MyNewSetting from "./components/settings/MyNewSetting.vue";
 
 const routes = [
     {

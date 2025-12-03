@@ -201,6 +201,7 @@ class Monitor extends BeanModel {
                 kafkaProducerSaslOptions: JSON.parse(this.kafkaProducerSaslOptions),
                 rabbitmqUsername: this.rabbitmqUsername,
                 rabbitmqPassword: this.rabbitmqPassword,
+                rebootScript: this.rebootScript,
             };
         }
 

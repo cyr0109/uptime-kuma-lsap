@@ -211,6 +211,22 @@
                 </div>
             </div>
 
+            <!-- Reboot Script -->
+            <div class="mb-4">
+                <label class="form-label" for="rebootScript">
+                    Reboot Script
+                </label>
+                <textarea
+                    id="rebootScript"
+                    v-model="settings.rebootScript"
+                    class="form-control"
+                    rows="5"
+                ></textarea>
+                <div class="form-text">
+                    Enter the script to be executed when a monitor needs to be rebooted.
+                </div>
+            </div>
+
             <!-- Save Button -->
             <div>
                 <button class="btn btn-primary" type="submit">
