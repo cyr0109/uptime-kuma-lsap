@@ -17,9 +17,7 @@ Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 
 Try it!
 
-Demo Server (Location: Frankfurt - Germany): <https://demo.kuma.pet/start-demo>
-
-It is a temporary live demo, all data will be deleted after 10 minutes. Sponsored by [Uptime Kuma Sponsors](https://github.com/louislam/uptime-kuma#%EF%B8%8F-sponsors).
+Demo on LSAP Server : <http://lsap.lu.im.ntu.edu.tw:8012/>
 
 ## ⭐ Features
 
@@ -36,6 +34,15 @@ It is a temporary live demo, all data will be deleted after 10 minutes. Sponsore
 - 2FA support
 
 ## 🔧 How to Install
+
+### 🐳 Docker Compose On LSAP VM
+```bash
+git clone https://github.com/cyr0109/uptime-kuma-lsap.git
+cd uptime-kuma-lsap
+docker compose up -d --build
+```
+
+Uptime Kuma is now running on http://localhost:3001 .
 
 ### 🐳 Docker Compose
 
